@@ -5,7 +5,7 @@ package lab1;
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static void main() {
 
         for (int i = 1; i < 100; i++) {
 
@@ -13,41 +13,30 @@ class FizzBuzz {
             boolean divisibleBy3 = i % 3 == 0;
             boolean divisibleBy5 = i % 5 == 0;
 
-            // Print our appropriate result.
+            // Print result.
             if (divisibleBy3 && divisibleBy5) {
-
                 System.out.println("Fizz Buzz");
-
             } else if (divisibleBy3) {
-
                 System.out.println("Fizz");
-
             } else if (divisibleBy5) {
-
                 System.out.println("Buzz");
-
             } else {
-
                 System.out.println(i);
-
             }
         }
     }
-}
 
-
-class FizzBussWhile {
-
-    public static void main(String[] args) {
-
+    // ==========================
+    // WHILE loop version (
+    // ==========================
+    public static void runWithWhileLoop() {
         int i = 1;
-        while (i <= 100) {
-
+        while (i < 100) {
             i = getI(i);
         }
     }
 
-    private static int getI(int i) {
+    public static int getI(int i) {
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
 
@@ -61,7 +50,7 @@ class FizzBussWhile {
             System.out.println(i);
         }
 
-        i++; // Remember to increment the iterator
+        i++; // increment
         return i;
     }
 }
