@@ -3,6 +3,8 @@ package lab1;
 public class Multiples {
 
     public static void main(String[] args) {
+        System.out.println(multiples());
+
         System.out.println(multiples(10, 3, 5));
     }
 
@@ -14,5 +16,9 @@ public class Multiples {
             }
         }
         return count;
+    }
+
+    static int multiples() {
+        return multiples(1000, 3, 5);
     }
 }
