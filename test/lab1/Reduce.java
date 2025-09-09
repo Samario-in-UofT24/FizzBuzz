@@ -4,7 +4,7 @@ public class Reduce {
 
     public static void main(String[] args) {
         int steps = reduce(100);
-        System.out.println("Steps to reach 0 from 100: " + steps);
+        System.out.println(steps);
     }
 
     public static int reduce(int n) {
